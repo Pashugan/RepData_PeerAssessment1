@@ -242,7 +242,7 @@ highest_activity_interval &lt;- sorted_activity[1, &#39;interval&#39;]
 missing_activity_cnt &lt;- sum(missing_activity_cond)
 </code></pre>
 
-<p>The total number of missing values is 2304.</p>
+<p>The total number of missing values is 2304. Now we&#39;ll use the mean for each 5-minute interval strategy to fill in missing values.</p>
 
 <pre><code class="r">filled_activity &lt;- as.data.frame(activity)
 for (i in 1:nrow(filled_activity)) {

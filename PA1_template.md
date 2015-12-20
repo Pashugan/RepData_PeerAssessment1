@@ -58,7 +58,7 @@ missing_activity_cond <- is.na(activity$steps)
 missing_activity_cnt <- sum(missing_activity_cond)
 ```
 
-The total number of missing values is 2304.
+The total number of missing values is 2304. Now we'll use the mean for each 5-minute interval strategy to fill in missing values.
 
 
 ```r
